@@ -1,0 +1,11 @@
+## Interface: 60200
+## Title: ChoppedUp
+## Version: 1.0
+## Notes: WHEN U CHOP UP A SCRUB IT WRITES IN CHAT HOW MANY PIECES THEY GOT CHOPPED INTO
+## Author: Kelstena
+## X-Curse-Packaged-Version: v1.14
+## X-Curse-Project-Name: ChoppedUp
+## X-Curse-Project-ID: choppedup
+## X-Curse-Repository-ID: wow/choppedup/mainline
+
+choppedup.lua
