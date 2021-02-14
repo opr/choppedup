@@ -6,7 +6,7 @@ local ADDON_COLOUR = "|cff386dff";
 
 local defaults = {
 	enabled = true,
-	npc_enabled = true, -- if this is on, when NPCs are chopped up it will report in chat
+	npc_enabled = false, -- if this is true, when NPCs are chopped up it will report in chat
 	message = "just chopped up <target> into <overkill> pieces!"
 };
 
@@ -87,7 +87,7 @@ function SlashCmdList.CHOPPEDUP(msg, editbox)
 			ChoppedUpDB.npc_enabled = true
 			return
 		end
-		brand_print( "Reporting of NPC destruction is currently " .. ( ChoppedUpDB.npc_enabled == true and "enabled" or "disabled" ) )
+		brand_print( "Reporting of NPC destruction is currently " .. ( ChoppedUpDB.npc_enabled == true and "enabled" or "disabled" ) .. ". To change it type /cu npc " .. (ChoppedUpDB.npc_enabled == true and "off" or "on") )
 	end
 
   if msg == "" then
@@ -106,7 +106,7 @@ ChoppedUp_EventFrame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 ChoppedUp_EventFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
 ChoppedUp_EventFrame:SetScript( "OnEvent", function ( self, event, ... )
 
-	if( event == "PLAYER_ENTERING_WORLD") then
+	if( event == "PLAYER_LOGIN") then
 		ChoppedUpDB = copyDefaults( defaults, ChoppedUpDB );
 	 	 print( brand_text( "Welcome to " .. ADDON_NAME .. " " .. ADDON_VERSION ) .. " - type " .. SLASH_CHOPPEDUP1 .. " or " .. SLASH_CHOPPEDUP2 .. " to configure the addon.");
 	end
