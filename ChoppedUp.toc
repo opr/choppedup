@@ -1,6 +1,6 @@
 ## Interface: 90002
 ## Title: ChoppedUp
-## Version: 1.2
+## Version: 1.21
 ## Notes: WHEN U CHOP UP A SCRUB IT WRITES IN CHAT HOW MANY PIECES THEY GOT CHOPPED INTO
 ## Author: Kelstena
 ## SavedVariablesPerCharacter: ChoppedUpDB
