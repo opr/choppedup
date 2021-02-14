@@ -15,4 +15,4 @@ Type `/cu` or `/choppedup` followed by a command to change the settings of the a
 - `/choppedup toggle` - toggles the addon on or off.
 - `/choppedup npc on|off` - sets whether the message should show when killing NPCs.
 - `/choppedup message <message>` - sets the custom message to be output on kills.
-  - This message _must_ contain the placeholders `<target>` and `<overkill>`. An example of this command is `/choppedup message just sliced <target> up into <overkill> tiny little bits!`.
+  - This message _must_ contain the placeholders `<target>` and `<overkill>`. An example of this command is `/choppedup message just sliced <target> up into <overkill> tiny little bits!`. This will then output `PlayerName just sliced EnemyTarget up into 5000 tiny little bits!`
