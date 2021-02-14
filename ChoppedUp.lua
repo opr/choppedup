@@ -103,7 +103,7 @@ end
 local ChoppedUp_EventFrame = CreateFrame("Frame")
 playerGUID = nil
 ChoppedUp_EventFrame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
-ChoppedUp_EventFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
+ChoppedUp_EventFrame:RegisterEvent("PLAYER_LOGIN")
 ChoppedUp_EventFrame:SetScript( "OnEvent", function ( self, event, ... )
 
 	if( event == "PLAYER_LOGIN") then
